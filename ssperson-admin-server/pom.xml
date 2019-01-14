@@ -4,15 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.ssperson.serv.base</groupId>
-        <artifactId>base-serv</artifactId>
+        <artifactId>ssperson-proj</artifactId>
+        <groupId>com.ssperson.serv</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.ssperson.serv.base.admin</groupId>
-    <artifactId>admin-server</artifactId>
+    <artifactId>ssperson-admin-server</artifactId>
 
-    <name>admin-server</name>
+    <name>ssperson-admin-server</name>
     <description>服务监控</description>
 
 
@@ -22,7 +21,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-boot-admin.version>2.0.1</spring-boot-admin.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -48,17 +46,6 @@
         </dependency>
 
     </dependencies>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>

@@ -26,10 +26,9 @@
     </properties>
 
     <modules>
-        <module>base-serv</module>
-        <module>demo</module>
         <module>ssperson-provider</module>
         <module>ssperson-eureka</module>
+        <module>ssperson-admin-server</module>
     </modules>
 
     <dependencies>
