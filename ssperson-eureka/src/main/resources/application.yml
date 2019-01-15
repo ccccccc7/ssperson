@@ -8,7 +8,7 @@ spring:
       client:
         url: http://localhost:9001
   security:
-  # 不设置的话账号默认是user,密码是一个随机值，启动时打印出来
+  # 不设置的话账号默认是user,密码是一个随机值，启动时打印出来.
     user:
       name: user
       password: 123456
@@ -16,12 +16,12 @@ eureka:
   client:
     register-with-eureka: false
     service-url:
-      # 指定eureka server的通信地址
+      # 指定eureka server的通信地址.
       defaultZone: http://user:123456@localhost:${server.port}/eureka
     fetch-registry: false
   instance:
-    # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
+    # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server.
     prefer-ip-address: true
   server:
-  #自我保护模式，没有开启自我保护模式时，eureka在一定时间内没有接收到某个微服务实例的心跳,eureka将会注销该实例
+  #自我保护模式，没有开启自我保护模式时，eureka在一定时间内没有接收到某个微服务实例的心跳,eureka将会注销该实例.
     enable-self-preservation: false

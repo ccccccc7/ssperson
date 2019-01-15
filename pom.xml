@@ -29,6 +29,7 @@
         <module>ssperson-provider</module>
         <module>ssperson-eureka</module>
         <module>ssperson-admin-server</module>
+        <module>ssperson-provider-feign</module>
     </modules>
 
     <dependencies>
@@ -36,6 +37,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
     </dependencies>
 
