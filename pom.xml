@@ -29,7 +29,7 @@
         <module>ssperson-provider</module>
         <module>ssperson-eureka</module>
         <module>ssperson-admin-server</module>
-        <module>ssperson-provider-feign</module>
+        <module>ssperson-feign</module>
     </modules>
 
     <dependencies>

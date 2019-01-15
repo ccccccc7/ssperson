@@ -1,5 +1,5 @@
 server:
-  port: 9030
+  port: 9021
 eureka:
   client:
     service-url:
@@ -13,4 +13,4 @@ spring:
       client:
         url: http://localhost:9001
   application:
-    name: feign-crm
+    name: provider-crm

@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "")
 @RestController
 public class IndexController {
-
     @Value("${server.port}")
     String port;
 

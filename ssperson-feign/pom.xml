@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ssperson-provider-feign</artifactId>
+    <artifactId>ssperson-feign</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>ssperson-provider-crm-feign</module>
+        <module>ssperson-feign-crm</module>
     </modules>
 
     <dependencies>
