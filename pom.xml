@@ -30,6 +30,8 @@
         <module>ssperson-eureka</module>
         <module>ssperson-admin-server</module>
         <module>ssperson-feign</module>
+        <module>ssperson-gateway</module>
+        <module>ssperson-config-server</module>
     </modules>
 
     <dependencies>

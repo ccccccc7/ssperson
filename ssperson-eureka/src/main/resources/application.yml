@@ -25,3 +25,11 @@ eureka:
   server:
   #自我保护模式，没有开启自我保护模式时，eureka在一定时间内没有接收到某个微服务实例的心跳,eureka将会注销该实例.
     enable-self-preservation: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
