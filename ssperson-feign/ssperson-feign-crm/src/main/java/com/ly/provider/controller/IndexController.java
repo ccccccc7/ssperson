@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @author zyl
  */
 @RestController
-@RequestMapping(value = "")
+@RequestMapping(value = "/index")
 public class IndexController {
 
     @Autowired
     private IndexFeignClient indexFeignClient;
 
-    @GetMapping("")
+    @GetMapping("/helloworld")
     public String index() {
         return indexFeignClient.helloWorld();
     }

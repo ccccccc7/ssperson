@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 /**
  * @author zyl
  */
-@FeignClient(value = "provider-crm", fallback = IndexFeignHystrix.class)
+@FeignClient(value = "ssperson-provider-crm", fallback = IndexFeignHystrix.class)
 public interface IndexFeignClient {
 
     @GetMapping("/")

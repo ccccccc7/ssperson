@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  *
  * @author zyl
  */
-@FeignClient(value = "provider-crm")
+@FeignClient(value = "ssperson-provider-crm")
 public interface UserFeignClient {
 
     /**
