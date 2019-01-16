@@ -5,6 +5,11 @@ spring:
     name: @pom.artifactId@
   profiles:
     active: master
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 management:
   endpoints:
     web:
@@ -13,3 +18,4 @@ management:
   endpoint:
     health:
       show-details: always
+
