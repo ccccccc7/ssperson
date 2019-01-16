@@ -7,7 +7,7 @@ spring:
         #是否从配置中心读取配置
         enabled: true
       label: master
-      profile: ${spring.profiles.active}
+      profile: dev
 eureka:
   client:
     service-url:

@@ -7,7 +7,7 @@ spring:
           username:
           password:
           #git 仓库地址
-          uri: https://github.com/ccccccc7/ssperson.git
+          uri: https://github.com/ccccccc7/cloud-config.git
           #仓库路径
           search-paths: /*
           #分支

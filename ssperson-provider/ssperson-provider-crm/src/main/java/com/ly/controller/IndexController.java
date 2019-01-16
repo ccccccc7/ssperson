@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @Value("${server.port}")
-    String port;
+    @Value("${ssperson.version}")
+    String version;
 
     @GetMapping("")
     public String helloWorld() {
-        return "hello world from port:" + port;
+        return "hello world from version:" + version;
     }
 }
