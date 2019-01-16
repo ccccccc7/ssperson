@@ -12,7 +12,7 @@
     <artifactId>ssperson-provider</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>ssperon-provider-crm</module>
+        <module>ssperson-provider-crm</module>
     </modules>
 
     <properties>

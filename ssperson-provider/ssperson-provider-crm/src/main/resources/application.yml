@@ -1,0 +1,12 @@
+server:
+  port: 9020
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9001
+  application:
+    name: @pom.artifactId@
+  profiles:
+    active: dev

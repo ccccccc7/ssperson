@@ -1,10 +1,22 @@
 spring:
   cloud:
     config:
-      server
+      server:
+        git:
+          #用户名、密码，公开仓库不需要
+          username:
+          password:
+          #git 仓库地址
+          uri: https://github.com/ccccccc7/ssperson.git
+          #仓库路径
+          search-paths: /*
+          #分支
+          default-label: ${spring.profiles.active}
+  boot:
+    admin:
+      client:
+        url: http://localhost:9001
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:9003/eureka/
-  instance:
-      instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}

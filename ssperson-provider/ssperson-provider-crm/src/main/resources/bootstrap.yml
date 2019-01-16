@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        #配置中心的服务名
+        service-id: ssperson-config-server
+        #是否从配置中心读取配置
+        enabled: true
+      label: master
+      profile: ${spring.profiles.active}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9003/eureka/
+  instance:
+  # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
+    prefer-ip-address: true
+
+
