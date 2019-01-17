@@ -32,6 +32,7 @@
         <module>ssperson-feign</module>
         <module>ssperson-gateway</module>
         <module>ssperson-config-server</module>
+        <module>ssperson-zipkin</module>
     </modules>
 
     <dependencies>

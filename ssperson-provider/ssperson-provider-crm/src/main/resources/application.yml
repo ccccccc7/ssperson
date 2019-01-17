@@ -1,5 +1,5 @@
 server:
-  port: 9021
+  port: 9020
 
 spring:
   boot:
@@ -10,3 +10,5 @@ spring:
     name: @pom.artifactId@
   profiles:
     active: dev
+  zipkin:
+    base-url: http://localhost:9411
