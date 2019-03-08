@@ -6,10 +6,7 @@ import com.ly.service.DiaryService;
 import dto.ResponseMapper;
 import dto.RestfulResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,5 +24,17 @@ public class DiaryController {
     public RestfulResponse<List<Diary>> list(@RequestBody DiaryQuery query) {
         List<Diary> list = diaryService.selectList(query);
         return ResponseMapper.ok(list);
+    }
+
+    @DeleteMapping("/{id}")
+    public RestfulResponse delete(@PathVariable Long id) {
+        diaryService.deleteById(id);
+        return ResponseMapper.ok();
+    }
+
+    @PostMapping("/add")
+    public RestfulResponse<Long> add(@RequestBody Diary diary){
+        Long id = diaryService.add(diary);
+        return ResponseMapper.ok(id);
     }
 }

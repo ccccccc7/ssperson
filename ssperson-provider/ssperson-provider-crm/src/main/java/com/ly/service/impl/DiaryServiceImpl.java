@@ -26,4 +26,21 @@ public class DiaryServiceImpl implements DiaryService {
     public List<Diary> selectList(DiaryQuery query) {
         return diaryMapper.selectList(query.getWrapper());
     }
+
+    @Override
+    public void deleteById(Long id) {
+        diaryMapper.deleteById(id);
+    }
+
+    @Override
+    public Long add(Diary diary) {
+        diaryMapper.insert(diary);
+        return diary.getId();
+    }
+
+    @Override
+    public Long updateById(Diary diary) {
+        diaryMapper.updateById(diary);
+        return diary.getId();
+    }
 }
