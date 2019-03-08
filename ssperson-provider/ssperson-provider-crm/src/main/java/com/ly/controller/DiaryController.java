@@ -37,4 +37,16 @@ public class DiaryController {
         Long id = diaryService.add(diary);
         return ResponseMapper.ok(id);
     }
+
+    @GetMapping("/{id}")
+    public RestfulResponse<Diary> detail(@PathVariable Long id) {
+        Diary diary = diaryService.selectById(id);
+        return ResponseMapper.ok(diary);
+    }
+
+    @PutMapping("")
+    public RestfulResponse update(@RequestBody Diary diary) {
+        diaryService.updateById(diary);
+        return ResponseMapper.ok();
+    }
 }
