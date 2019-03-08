@@ -17,7 +17,7 @@ import java.util.List;
  * @author zyl
  */
 @RestController
-@RequestMapping(value = "/api/dairy")
+@RequestMapping(value = "/api/diary")
 public class DiaryController {
 
     @Autowired
