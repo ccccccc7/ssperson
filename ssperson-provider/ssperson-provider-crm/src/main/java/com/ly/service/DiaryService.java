@@ -1,5 +1,6 @@
 package com.ly.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.ly.model.diary.Diary;
 import com.ly.model.diary.DiaryQuery;
 
@@ -41,4 +42,11 @@ public interface DiaryService {
      * @return
      */
     Long updateById(Diary diary);
+
+    /**
+     * page diary
+     * @param query
+     * @return
+     */
+    IPage<Diary> selectPage(DiaryQuery query);
 }

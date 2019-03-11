@@ -1,5 +1,6 @@
 package com.ly.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.ly.mapper.DiaryMapper;
 import com.ly.model.diary.Diary;
 import com.ly.model.diary.DiaryQuery;
@@ -42,5 +43,10 @@ public class DiaryServiceImpl implements DiaryService {
     public Long updateById(Diary diary) {
         diaryMapper.updateById(diary);
         return diary.getId();
+    }
+
+    @Override
+    public IPage<Diary> selectPage(DiaryQuery query) {
+        return diaryMapper.selectPage(query.buildPage(), query.getWrapper());
     }
 }

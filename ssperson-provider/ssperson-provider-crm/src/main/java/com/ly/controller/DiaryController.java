@@ -1,5 +1,6 @@
 package com.ly.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.ly.model.diary.Diary;
 import com.ly.model.diary.DiaryQuery;
 import com.ly.service.DiaryService;
@@ -48,5 +49,11 @@ public class DiaryController {
     public RestfulResponse update(@RequestBody Diary diary) {
         diaryService.updateById(diary);
         return ResponseMapper.ok();
+    }
+
+    @PostMapping("/page")
+    public RestfulResponse<IPage<Diary>> selectPage(@RequestBody DiaryQuery diary) {
+        IPage<Diary> page = diaryService.selectPage(diary);
+        return ResponseMapper.ok(page);
     }
 }
