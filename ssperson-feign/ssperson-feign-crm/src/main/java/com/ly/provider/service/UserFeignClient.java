@@ -2,6 +2,7 @@ package com.ly.provider.service;
 
 import com.ly.provider.model.UserDTO;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @author zyl
  */
 @FeignClient(value = "ssperson-provider-crm")
+@Component
 public interface UserFeignClient {
 
     /**

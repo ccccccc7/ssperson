@@ -6,10 +6,9 @@ import dto.BaseQuery;
 /**
  * @author zyl
  */
-public class DiaryQuery extends BaseQuery {
-
+public class ReplayQuery extends BaseQuery {
     @Override
-    public Wrapper<Diary> getWrapper() {
+    public Wrapper<Replay> getWrapper() {
         return null;
     }
 }
