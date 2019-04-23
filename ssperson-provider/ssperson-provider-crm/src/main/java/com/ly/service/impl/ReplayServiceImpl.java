@@ -39,4 +39,9 @@ public class ReplayServiceImpl implements ReplayService {
         replayMapper.updateById(replay);
         return replay.getId();
     }
+
+    @Override
+    public Replay selectById(Long id) {
+        return replayMapper.selectById(id);
+    }
 }

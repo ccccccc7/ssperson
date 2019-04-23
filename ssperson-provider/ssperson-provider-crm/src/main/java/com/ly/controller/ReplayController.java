@@ -43,4 +43,9 @@ public class ReplayController {
     public RestfulResponse<Long> update(@RequestBody Replay replay) {
         return ResponseMapper.ok(replayService.update(replay));
     }
+
+    @GetMapping("/{id}")
+    public RestfulResponse<Replay> selectById(@PathVariable Long id) {
+        return ResponseMapper.ok(replayService.selectById(id));
+    }
 }

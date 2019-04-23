@@ -38,4 +38,11 @@ public interface ReplayService {
      * @return
      */
     Long update(Replay replay);
+
+    /**
+     * select by id
+     * @param id
+     * @return
+     */
+    Replay selectById(Long id);
 }
