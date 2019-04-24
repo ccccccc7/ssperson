@@ -16,4 +16,5 @@ public class Replay {
     private String title;
     private String content;
     private LocalDate createDate;
+    private String keyword;
 }
