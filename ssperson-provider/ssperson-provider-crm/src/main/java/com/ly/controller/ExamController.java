@@ -45,4 +45,9 @@ public class ExamController {
     public RestfulResponse<List<ExamMistakeDetail>> detailList(@RequestBody ExamMistakeDetailQuery query) {
         return ResponseMapper.ok(examMistakeService.selectDetailList(query));
     }
+
+    @PostMapping("/detail/add")
+    public RestfulResponse<Long> add(@RequestBody ExamMistakeDetail detail) {
+        return ResponseMapper.ok(examMistakeService.addDetail(detail));
+    }
 }

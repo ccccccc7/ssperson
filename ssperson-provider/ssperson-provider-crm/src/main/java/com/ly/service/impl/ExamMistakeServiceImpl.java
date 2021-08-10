@@ -43,7 +43,8 @@ public class ExamMistakeServiceImpl implements ExamMistakeService {
 
     @Override
     public Long addDetail(ExamMistakeDetail detail) {
-        return null;
+        examMistakeDetailMapper.insert(detail);
+        return detail.getId();
     }
 
     @Override
