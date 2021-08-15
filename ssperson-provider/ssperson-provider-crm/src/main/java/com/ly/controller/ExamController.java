@@ -31,6 +31,12 @@ public class ExamController {
         return ResponseMapper.ok(examMistakeIPage);
     }
 
+    @PostMapping("/list")
+    public RestfulResponse<List<ExamMistake>> select(@RequestBody ExamMistakeQuery query) {
+        List<ExamMistake> examMistakes = examMistakeService.selectList(query);
+        return ResponseMapper.ok(examMistakes);
+    }
+
     @PostMapping("/add")
     public RestfulResponse<Long> add(@RequestBody ExamMistake mistake) {
         return ResponseMapper.ok(examMistakeService.addMistake(mistake));

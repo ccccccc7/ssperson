@@ -62,4 +62,11 @@ public interface ExamMistakeService {
      * @return
      */
     List<ExamMistakeType> selectTypeList(ExamMistakeTypeQuery query);
+
+    /**
+     *
+     * @param query
+     * @return
+     */
+    List<ExamMistake> selectList(ExamMistakeQuery query);
 }

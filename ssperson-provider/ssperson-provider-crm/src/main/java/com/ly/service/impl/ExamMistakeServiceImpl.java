@@ -66,4 +66,9 @@ public class ExamMistakeServiceImpl implements ExamMistakeService {
     public List<ExamMistakeType> selectTypeList(ExamMistakeTypeQuery query) {
         return examMistakeTypeMapper.selectList(query.getWrapper());
     }
+
+    @Override
+    public List<ExamMistake> selectList(ExamMistakeQuery query) {
+        return examMistakeMapper.selectList(query.getWrapper());
+    }
 }
